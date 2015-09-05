@@ -1,5 +1,5 @@
-require "findjobs/version"
+require 'bundler/setup'
+require 'commander'
 
-module Findjobs
-  # Your code goes here...
-end
+require 'findjobs/version'
+require 'findjobs/cli'
