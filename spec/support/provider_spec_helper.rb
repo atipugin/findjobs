@@ -1,6 +1,5 @@
 RSpec.shared_examples 'a provider' do
   let(:term) { 'ruby' }
-  let(:location) { 'berlin' }
 
   subject { described_class.new(term) }
 

@@ -33,4 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'commander', '~> 4.3.5'
   spec.add_dependency 'feedjira', '~> 2.0.0'
   spec.add_dependency 'virtus', '~> 1.0.5'
+  spec.add_dependency 'celluloid', '~> 0.17.1.2'
 end
