@@ -3,6 +3,11 @@ RSpec.describe Findjobs::Finder do
 
   subject { described_class.new(term) }
 
+  before do
+    expect_any_instance_of(described_class)
+      .to receive(:find).and_return(build_list(:job, 10))
+  end
+
   describe '#find' do
     it 'returns an array' do
       expect(subject.find).to be_a(Array)
