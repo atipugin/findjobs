@@ -23,7 +23,22 @@ Just add water (i.e. install the gem):
 
 ## Usage
 
-TODO: Write usage instructions here
+Find all jobs by term (e.g. "ruby"):
+
+    $ findjobs ruby
+    
+Find jobs in specific location:
+
+    $ findjobs ruby --location=berlin
+    
+Display jobs posted last 7 days:
+
+    $ findjobs ruby --days=7
+
+## Plans
+
+1. Add more sources
+2. Add more search options (remote work, visa sponsorship etc)
 
 ## Contributing
 
