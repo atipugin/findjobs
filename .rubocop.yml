@@ -6,3 +6,11 @@ AllCops:
 
 Style/Documentation:
   Enabled: false
+
+Metrics/AbcSize:
+  Exclude:
+    - lib/findjobs/cli.rb
+
+Metrics/MethodLength:
+  Exclude:
+    - lib/findjobs/cli.rb
