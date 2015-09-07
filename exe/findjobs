@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'findjobs'
+
+Findjobs::Cli.new.run
