@@ -6,7 +6,7 @@
 
 Simple CLI tool to help you find your next job. Based on RSS feeds of variuos job boards (GitHub, StackOverflow etc).
 
-![](https://dl.dropboxusercontent.com/u/5813290/github/findjobs/preview.gif)
+![](https://dl.dropboxusercontent.com/u/5813290/github/findjobs/example.gif)
 
 List of currently supported sources:
 - [GitHub](https://jobs.github.com/)
