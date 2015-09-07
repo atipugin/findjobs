@@ -22,8 +22,7 @@ module Findjobs
 
     def find
       Findjobs::Providers::AVAILABLE_PROVIDERS
-        .map { |k| k.new(term, options[:location]).future(:search) }
-        .map(&:value)
+        .map { |k| k.new(term, options[:location]).search }
         .flatten
         .select { |j| j.date <= Date.today }
     end

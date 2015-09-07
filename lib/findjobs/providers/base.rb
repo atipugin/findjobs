@@ -1,8 +1,6 @@
 module Findjobs
   module Providers
     class Base
-      include Celluloid
-
       attr_reader :term, :location
 
       def initialize(term, location = nil)

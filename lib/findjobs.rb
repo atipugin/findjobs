@@ -2,7 +2,6 @@ require 'bundler/setup'
 require 'commander'
 require 'feedjira'
 require 'virtus'
-require 'celluloid/current'
 require 'colorize'
 
 require 'findjobs/version'
