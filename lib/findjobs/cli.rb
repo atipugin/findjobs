@@ -49,7 +49,7 @@ module Findjobs
       case date
       when Date.today then 'Today'
       when Date.today - 1 then 'Yesterday'
-      else date.strftime('%b %m, %Y')
+      else date.strftime('%b %d, %Y')
       end
     end
   end
