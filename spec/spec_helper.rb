@@ -19,6 +19,7 @@
 require 'aruba/rspec'
 require 'factory_girl'
 require 'ffaker'
+require 'rspec/collection_matchers'
 
 require File.expand_path('../../lib/findjobs.rb', __FILE__)
 Dir[File.join(File.dirname(__FILE__), '{support,factories}', '**', '*.rb')].each { |f| require f }

@@ -21,6 +21,16 @@ RSpec.describe Findjobs::Finder do
       dates = subject.by_date.keys
       expect(dates[0]).to be > dates[1]
     end
+
+    context 'when amount of days is set' do
+      let(:days) { 1 }
+
+      subject { described_class.new(term, days: days) }
+
+      it 'returns expected amount of days' do
+        expect(subject.by_date.keys).to have_exactly(days).items
+      end
+    end
   end
 
   describe '#find' do

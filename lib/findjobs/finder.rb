@@ -1,23 +1,28 @@
 module Findjobs
   class Finder
-    attr_reader :term, :location
+    attr_reader :term, :options
 
-    def initialize(term, location = nil)
+    def self.default_options
+      { location: nil, days: 0 }
+    end
+
+    def initialize(term, options = {})
       @term = term
-      @location = location
+      @options = self.class.default_options.merge(options)
     end
 
     def by_date
-      by_date = {}
-      h = find.group_by(&:date)
-      h.keys.sort { |a, b| b <=> a }.each { |k| by_date[k] = h[k] }
-
-      by_date
+      Hash[
+        find
+          .group_by(&:date)
+          .sort_by { |k, _| k }
+          .reverse[0..options[:days].pred]
+      ]
     end
 
     def find
       Findjobs::Providers::AVAILABLE_PROVIDERS
-        .map { |k| k.new(term, location).future(:search) }
+        .map { |k| k.new(term, options[:location]).future(:search) }
         .map(&:value)
         .flatten
         .select { |j| j.date <= Date.today }

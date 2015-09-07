@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry', '~> 0.10.1'
   spec.add_development_dependency 'factory_girl', '~> 4.5.0'
   spec.add_development_dependency 'ffaker', '~> 2.1.0'
+  spec.add_development_dependency 'rspec-collection_matchers', '~> 1.1.2'
 
   spec.add_dependency 'commander', '~> 4.3.5'
   spec.add_dependency 'feedjira', '~> 2.0.0'
