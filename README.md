@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/atipugin/findjobs/badges/gpa.svg)](https://codeclimate.com/github/atipugin/findjobs)
 [![Gem Version](https://badge.fury.io/rb/findjobs.svg)](http://badge.fury.io/rb/findjobs)
 
-Simple CLI tool (initially created for myself) to help you find your next job.
+Simple CLI tool (initially created for myself) to help you find your next job. Based on RSS feeds on variuos job boards (GitHub, StackOverflow etc).
 
 ![](https://dl.dropboxusercontent.com/u/5813290/github/findjobs/preview.gif)
 
