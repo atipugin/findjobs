@@ -3,6 +3,8 @@ require 'commander'
 require 'feedjira'
 require 'virtus'
 require 'colorize'
+require 'celluloid/current'
+require 'celluloid/pmap'
 
 require 'findjobs/version'
 require 'findjobs/job'
