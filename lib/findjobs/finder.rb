@@ -16,11 +16,11 @@ module Findjobs
     end
 
     def find
-      futures = Findjobs::Providers::AVAILABLE_PROVIDERS.map do |klass|
-        klass.new(term, location).future(:search)
-      end
-
-      futures.map(&:value).flatten.sort { |a, b| b.date <=> a.date }
+      Findjobs::Providers::AVAILABLE_PROVIDERS
+        .map { |k| k.new(term, location).future(:search) }
+        .map(&:value)
+        .flatten
+        .select { |j| j.date <= Date.today }
     end
   end
 end
