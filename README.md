@@ -1,4 +1,4 @@
-# Findjobs
+# findjobs
 
 [![Build Status](https://travis-ci.org/atipugin/findjobs.svg)](https://travis-ci.org/atipugin/findjobs)
 [![Code Climate](https://codeclimate.com/github/atipugin/findjobs/badges/gpa.svg)](https://codeclimate.com/github/atipugin/findjobs)
