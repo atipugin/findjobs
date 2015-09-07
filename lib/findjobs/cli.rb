@@ -20,6 +20,7 @@ module Findjobs
             .by_date
 
           if results.any?
+            enable_paging
             results.each { |d, j| print_date(d, j) }
           else
             say %(No "#{args[0]}" jobs found.)
