@@ -6,7 +6,7 @@
 
 Simple CLI tool to help you find your next job. Based on RSS feeds of various job boards (GitHub, StackOverflow etc).
 
-![](https://dl.dropboxusercontent.com/u/5813290/github/findjobs/example.gif)
+![](https://raw.githubusercontent.com/atipugin/findjobs/master/images/example.gif)
 
 List of currently supported sources:
 - [GitHub](https://jobs.github.com/)
@@ -26,11 +26,11 @@ Just add water (i.e. install the gem):
 Find all jobs by term (e.g. "ruby"):
 
     $ findjobs ruby
-    
+
 Find jobs in specific location:
 
     $ findjobs ruby --location=berlin
-    
+
 Display jobs posted last 7 days:
 
     $ findjobs ruby --days=7
